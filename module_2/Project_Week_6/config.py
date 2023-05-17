@@ -3,7 +3,3 @@
 
 # In[ ]:
 
-
-c_id = "de33db3d76bc47a4a9ed98f6c823727b"
-c_se = "3370dff0b28b42e18914f25d5e144e3a"
-
