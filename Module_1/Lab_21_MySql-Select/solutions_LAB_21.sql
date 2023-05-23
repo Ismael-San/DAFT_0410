@@ -24,13 +24,13 @@ ORDER BY a.au_id, p.pub_name DESC
 limit 12;
 
 ##Challenge 2
--- SELECT ,
--- COUNT(*)
--- FROM titleauthor ta
--- GROUP BY au_id;
-#LEFT JOIN authors a using (au_id)
-#LEFT JOIN titles t using (title_id)
-#LEFT JOIN publishers p using (pub_id);
+SELECT a.au_id as AUTHOR_ID, a.au_lname as LAST_NAME, a.au_fname as FIRST_NAME, p.pub_name as PUBLISHER, 
+COUNT(t.title) as TITLE_COUNT
+FROM titleauthor ta
+LEFT JOIN authors a using (au_id)
+LEFT JOIN titles t using (title_id)
+LEFT JOIN publishers p using (pub_id)
+GROUP BY au_id;
 
 
 ##Challenge 3
