@@ -38,7 +38,7 @@ FROM order_reviews;
 #GROUP BY review_score
 
 ## 8. In the order_reviews table, create a new column with a description that corresponds to each number category for each review score from 1 - 5, then find the review score and category occurring most frequently in the table.
-SELECT descrip, 
+SELECT descrip 
 FROM order_reviews;
 
 ## 9. From the order_reviews table, find the review value occurring most frequently and how many times it occurs.
